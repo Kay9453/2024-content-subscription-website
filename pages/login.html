@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登入頁</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container login-content">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 px-0"> 
+          <form action="article.html" class="form-custom">
+            <h2 class="fs-4 text-secondary-200">登入</h2>
+            <div class="mb-4">
+              <label for="account" class="form-label mb-3 fw-bold">會員帳號</label>
+              <input type="text" class="form-control content-input" id="account" placeholder="請輸入會員帳號">
+            </div>
+            <div class="mb-6 mb-lg-9"> 
+              <label for="password" class="form-label mb-3 fw-bold">密碼</label>
+              <input type="password" class="form-control content-input" id="password" placeholder="請輸入密碼">
+            </div>
+            <a href="article.html" class="btn btn-custom btn-custom-primary w-100" target="_blank">
+              <span class="fs-md-5">立即登入</span>
+              <i class="bi bi-arrow-right fs-5 fs-md-4 ms-3"></i>
+            </a>
+            <div class="d-flex gap-3">
+              <span class="login-deco"></span>
+              <p class="text-nowrap text-gray-300 fw-bold">或以其他方式登入</p>
+              <span class="login-deco"></span>
+            </div>
+            <a href="article.html" class="btn btn-custom btn-custom-light w-100" target="_blank">
+              <img src="../assets/images/icons-google.png" class="me-3" alt="使用 Google 登入">
+              <span class="fs-md-5 socail-login">使用 Google 登入</span>
+            </a>
+            <a href="article.html" class="btn btn-custom btn-custom-light w-100" target="_blank">
+              <img src="../assets/images/icons-facebook.png" class="me-3" alt="使用 Facebook 登入">
+              <span class="fs-md-5 socail-login">使用 Facebook 登入</span>
+            </a>
+            <div class="d-flex gap-3 justify-content-center">
+              <p class="is-member">還沒加入會員？</p>
+              <a href="register.html" class="link-passage" target="_blank">點此註冊</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

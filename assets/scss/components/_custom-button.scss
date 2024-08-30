@@ -1,0 +1,41 @@
+// 預設按鈕
+.btn-custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    letter-spacing: 0.1em;
+  }
+  @include media-breakpoint-up(md) {
+    .btn-custom{
+      padding: 16px 24px;
+    }
+  }
+
+// 主色按鈕：綠色
+.btn-custom-primary{
+    background-color: $accent-200;
+    color: #fff;
+    &:hover{
+      background-color: $accent-300;
+      color: #fff;
+    }
+    &:disabled{
+      background-color: $neutral-200;
+      color: #fff;
+    }
+}
+
+// 淡色按鈕：淺灰色
+  .btn-custom-light{
+    background-color: $gray-100;
+    color: $gray-600;
+    &:hover{
+      background-color: $gray-300;
+      color: $gray-800; 
+    }
+    &:disabled{
+      background-color: $gray-100;
+      color: $gray-500;
+    }
+  }

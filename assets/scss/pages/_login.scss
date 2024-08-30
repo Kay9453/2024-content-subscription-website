@@ -1,0 +1,30 @@
+// 註冊 & 登入共用 scss
+
+.login-content{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+@include media-breakpoint-up(lg) {
+    .login-content{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+
+.login-deco{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: $gray-200;
+    margin: auto 0;
+}
+
+.socail-login{
+    color: #52525B;
+}
+
+.is-member{
+    color: #212121;
+}
+

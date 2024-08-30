@@ -1,0 +1,68 @@
+.checkout-content{
+    margin-top: 16px;
+    margin-bottom: 60px;
+}
+@include media-breakpoint-up(lg) {
+    .checkout-content{
+        margin-top: 69px;
+        margin-bottom: 100px;
+    }
+}
+
+.checkout-breadcrumb{
+    margin-bottom: 8px;
+}
+@include media-breakpoint-up(lg) {
+    .checkout-breadcrumb{
+        margin-bottom: 16px;
+    }
+}
+
+.payment-title{
+    margin-bottom: 4px;
+}
+@include media-breakpoint-up(lg) {
+    .payment-title{
+        margin-bottom: 16px;
+    }
+}
+
+.product-info{
+    font-size: 16px;
+    color: #09090B;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+@include media-breakpoint-up(lg) {
+    .product-info{
+        font-size: 20px;
+    }
+}
+.payment-cycle{
+    color: #A1A1AA;
+    font-weight: bold;
+}
+
+.border-top-custom-light{
+    border-top: 1px solid #DEE2E6;
+}
+.border-bottom-custom-light{
+    border-bottom: 1px solid #DEE2E6;
+}
+
+
+// 小計 & 折扣 & 總計 的樣式
+.checkout-item{
+    color: #52525B;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+.total-price{
+    color: #09090B;
+    font-size: 24px;
+}
+@include media-breakpoint-up(lg) {
+    .total-price{
+        font-size: 28px;
+    }
+}

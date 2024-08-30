@@ -1,3 +1,296 @@
-.index-title {
-  font-size: 100px;
+// 區塊：Banner
+.banner-bg{
+  background-image: url("../images/banner-sm.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 60px);
+}
+@include media-breakpoint-up(md) {
+  .banner-bg {
+    background-image: url("../images/banner.png");
+    height: calc(100vh - 204px);
+  }
+}
+
+.banner-title{
+  height: calc(100vh - 60px);
+  padding-bottom: 48px;
+}
+@include media-breakpoint-up(md) {
+  .banner-title {
+    height: calc(100vh - 204px);
+    padding-bottom: 0;
+  }
+}
+
+// 區塊：熱門主題
+.theme-card{
+  border-radius: 20px 0px;
+  overflow: hidden;
+  &::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $gray-600;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  &:hover::before{
+    opacity: .4;
+    cursor: pointer;
+  }
+}
+
+.theme-title{
+  font-weight: $font-weight-bold;
+}
+@include media-breakpoint-up(md) {
+  .theme-title{
+    font-weight: $font-weight-bolder;
+  }
+}
+
+// 區塊：精選文章
+.container{
+  .sec-article{
+    display: flex;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .sec-article{
+    flex-direction: row-reverse;
+  }
+}
+
+.control-btn{
+  padding: 4px 16px;
+  border: 1px solid $gray-600;
+  background-color: #fff;
+  &:hover{
+    background-color: $gray-600;
+    color: #fff;
+  }
+  &:disabled{
+
+  }
+}
+
+.page{
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@include media-breakpoint-up(lg) {
+  .page{
+    margin-bottom: 32px;
+  }
+}
+
+.page-btn-deco{
+  width: 80px;
+  height: 1px;
+  background-color: $gray-600;
+}
+
+// 區塊：母親節強檔活動
+.act-title{
+  color: $accent-200;
+  font-weight: bold;
+}
+@include media-breakpoint-up(lg) {
+  .act-title{
+    color: $primary-400;
+    font-size: 24px;
+  }
+}
+
+.act-content{
+  position: relative;
+}
+.act-content::after{
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 104px;
+  background-image: url("../images/bg-2-sm.png");
+  background-position: center center;
+  background-size: cover;
+  right: -48px;
+  bottom:-8px;
+}
+@include media-breakpoint-up(lg) {
+  .act-content::before{
+    position: absolute;
+    content: "";
+    width: 217px;
+    height: 81px;
+    background-image: url("../images/bg-1.png");
+    background-position: center center;
+    background-size: cover;
+    left: 8px;
+    bottom:-8px;
+  }
+  .act-content::after{
+    width: 300px;
+    height: 196px;
+    background-image: url("../images/bg-2.png");
+    background-position: center center;
+    background-size: cover;
+    right: -28px;
+    bottom:-8px;
+  }
+}
+// 區塊：大家都在看
+.sidebar-bg{
+  background-color: white;
+  border-radius: 12px;
+}
+
+// .hot-link{
+//   color: $gray-900;
+//   font-size: 20px;
+//   font-weight: bolder;
+//   letter-spacing: 0.1em;
+//   &:hover{
+//     color: $accent-200;
+//   }
+// }
+
+// .nav-pills{
+//   .hot-link.active{
+//     background-color: $accent-100;
+//     color: $gray-900;
+//   }
+// }
+
+.hot-content{
+  border-radius: 12px;;
+  .card-img-group{
+    gap: 4px;
+  }
+  .card-img-rounded-start{
+    border-radius: 20px 0px 4px 20px;
+  }
+  .card-img-rounded{
+    border-radius: 4px;
+  }
+  .card-img-rounded-end{
+    border-radius: 0px 20px 20px 0px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 100%;
+  height: auto;
+  line-height: 1.2;
+  // font-size: 20px;
+  font-weight: bolder;
+  color: $gray-900;
+  opacity: 1;
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  text-wrap: nowrap;
+  letter-spacing: 0.1em;
+}
+.swiper-pagination-bullet-active {
+  color: $gray-900;
+  background-color: $accent-100;
+}
+
+// 區塊：品味生活
+.life{
+  .card-title{
+    font-size: 40px;
+    color: $primary-400;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .life{
+    .card-title{
+      font-size: 52px;
+    }
+  }
+}
+
+// 區塊：生活風格提案
+.project-subtitle{
+  color: $gray-600;
+  font-weight: bold;
+}
+
+.project{
+  .card-img{
+    height: 236px;
+    border-radius: 4px 4px 0 0;
+  }
+}
+
+.project-card{
+  border-radius: 4px 0px;
+  width: 306px;
+  &::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $gray-600;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  &:hover::before{
+    opacity: .4;
+    cursor: pointer;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .project-card{
+    width: 100%;
+  }
+  .mt-md-project{
+    margin-top: 64px;
+  }
+}
+.badge{
+  border: 1px solid $accent-100;
+}
+
+.project-wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.project-group{
+  display: flex;
+  margin-top: 65px;
+}
+@include media-breakpoint-up(md) {
+  .project-wrapper{
+    flex-wrap: wrap;
+    overflow-x: unset;
+    gap: 0 24px;
+  }
+  .project-group{
+    width: calc( 50% - 12px);
+    flex-direction: column;
+  }
+  .project-card-1{
+    margin-top: 64px;
+  }
+  .project-card-2{
+    margin-top: 40px;
+  }
+  .project-card-4{
+    margin-top: 40px;
+  }
 }

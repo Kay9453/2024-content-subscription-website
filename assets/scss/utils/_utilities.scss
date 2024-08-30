@@ -1,0 +1,173 @@
+//讓文字的通用樣式有響應式變化
+$utilities: map-merge(
+  $utilities, (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+// 圖片取代文字
+@mixin hide-text{
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// 區塊標題 
+.section-title{
+  font-size: $h4-font-size;
+  font-weight: $font-weight-bolder;
+}
+@include media-breakpoint-up(md) {
+  .section-title{
+    font-size: $h2-font-size;
+  } 
+}
+
+.object-cover{
+  object-fit: cover;
+}
+
+@include media-breakpoint-up(md) {
+  .fw-md-700{
+    font-weight: $font-weight-bold;
+  } 
+  .fw-md-900{
+    font-weight: $font-weight-bolder;
+  } 
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+// 文字連結樣式
+.link-passage{
+  color: $accent-200;
+  letter-spacing: 0.1em; 
+  transition: color .5s;
+  font-weight: bold;
+  &:hover{
+      color: $accent-300;
+  }
+}
+
+
+
+// 共用：表單樣式
+.form-custom{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border-top: 1px solid $primary-300;
+  border-bottom: 1px solid $primary-300;
+  background-color: #fff;
+}
+@include media-breakpoint-up(lg) {
+  .form-custom{
+    gap: 40px;
+    padding: 40px;
+    border: 1px solid $primary-300; 
+    border-radius: 12px; 
+  }
+}
+
+// 付款頁的 form 
+.form-custom-checkout{
+  border-radius: 12px; 
+  border: 1px solid $primary-300;
+}
+
+
+
+// 共用：Input 輸入欄
+.content-input{
+  border: 0;
+  &:focus {
+    // border-color: $accent-200;
+    // box-shadow: 0 0 0 0.25rem rgba(86, 149, 115, 0.25);
+    border:0 ;
+    box-shadow: none;
+  }
+}
+
+.form-check-input{
+  border-color: $gray-500;
+  border-radius: 2px;
+  margin: 8px;
+  background-color: #fff;
+}
+
+// .form-check-input {
+//   --bs-form-check-bg: #f8f9fa;
+//   flex-shrink: 0;
+//   width: 1em;
+//   height: 1em;
+//   margin-top: 0.25em;
+//   vertical-align: top;
+//   appearance: none;
+//   background-color: var(--bs-form-check-bg);
+//   background-image: var(--bs-form-check-bg-image);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: contain;
+//   border: var(--bs-border-width) solid var(--bs-border-color);
+// }
+
+.form-check-input:active {
+  // filter: brightness(90%);
+  filter:none;
+}
+.form-check-input:checked {
+  // background-color: #0d6efd;
+  // border-color: #0d6efd;
+  background-color: $accent-200;
+  border-color: $accent-200;
+}
+.form-check-input:focus {
+  border-color: $accent-200;
+  box-shadow:none;
+  outline: 0;
+  // box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+
+
+// 共用：Tag 樣式
+.tag{
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: $primary-300;
+  color: $primary-400;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover{
+    color: #fff;
+    background-color: $primary-400;
+  }
+}
+
+
+// 共用：麵包屑
+.breadcrumb{
+  padding: 12px 0;
+}
+.breadcrumb-item{
+  font-size: 14px;
+  color: $gray-600;
+  line-height: 2;
+  &.active{
+    color: $accent-200;
+  }
+  &:not(:active):hover{
+    color: $accent-200;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .breadcrumb-item{
+      font-size: 16px;
+  }
+}
