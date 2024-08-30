@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登入頁</title>
+    <script type="module" crossorigin src="/2024-content-subscription-website/assets/main-361980dc.js"></script>
+    <link rel="stylesheet" href="/2024-content-subscription-website/assets/main-90d38142.css">
+  </head>
+  <body>
+    <header class="container">
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container-fluid py-lg-8 border-bottom-lg px-lg-0">
+            <h1 class="logo d-flex align-items-center me-lg-8 my-5 my-lg-0">
+                <a href="index.html" target="_blank">LOGO</a>
+            </h1>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <!-- <i class="bi bi-x close"></i> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex me-auto position-relative my-6 my-lg-0">
+                    <input class="form-control me-2 rounded-pill search-bar pe-10" placeholder="搜尋文章" aria-label="Search">
+                    <button type="submit" class="btn text-secondary-200 position-absolute end-0  top-50 translate-middle me-5 p-0 border-0">
+                        <i class="bi bi-search fs-4"></i>
+                    </button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-6 gap-lg-5 mb-9 me-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link p-3 px-lg-5 py-lg-1 text-nowrap" href="article.html" target="_blank">所有文章</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3 px-lg-5 py-lg-1 text-nowrap" href="subscribe.html" target="_blank">訂閱方案</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3 px-lg-5 py-lg-1 text-nowrap" href="about.html" target="_blank">關於我們</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="login.html" class="btn btn-custom btn-custom-primary text-nowrap w-100" target="_blank">登入 / 註冊</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>    <div class="container login-content">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 px-0"> 
+          <form action="article.html" class="form-custom">
+            <h2 class="fs-4 text-secondary-200">登入</h2>
+            <div class="mb-4">
+              <label for="account" class="form-label mb-3 fw-bold">會員帳號</label>
+              <input type="text" class="form-control content-input" id="account" placeholder="請輸入會員帳號">
+            </div>
+            <div class="mb-6 mb-lg-9"> 
+              <label for="password" class="form-label mb-3 fw-bold">密碼</label>
+              <input type="password" class="form-control content-input" id="password" placeholder="請輸入密碼">
+            </div>
+            <a href="article.html" class="btn btn-custom btn-custom-primary w-100" target="_blank">
+              <span class="fs-md-5">立即登入</span>
+              <i class="bi bi-arrow-right fs-5 fs-md-4 ms-3"></i>
+            </a>
+            <div class="d-flex gap-3">
+              <span class="login-deco"></span>
+              <p class="text-nowrap text-gray-300 fw-bold">或以其他方式登入</p>
+              <span class="login-deco"></span>
+            </div>
+            <a href="article.html" class="btn btn-custom btn-custom-light w-100" target="_blank">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBtZM/T8JAGMafa4kQHSSMTCXRxMRBMK5GOjqYlNFJ/QAmTqyIg3HzIwCLjnQwrpToZqJFXRyMXYxOSmQAIuV8j9YGShv/RJ/k7tr33v7e5/4U+COxsAmeRRw2NMpQBgEJJvUmM2B9C+QCDulxE8EqQ0bRD2Q+iII+auCui3AZ7AzqcCDyBcSgUg0amxRfoTFLzSJHW36yB8KiXMCF/QkRH+bYOYGGHS/TnsnB+zRYGq/FFEj8AZc2cEqtw3NkXccP5DiS+2lwJlwBc7LBVrsjkGS+sRsGYJGI/rg/bzogLqWpc2YmWd2fzMEKYSD0eqI3pfEZHscv5DhitHmuodv3xALwNJLEwIsYdbhBgzJ4kZnp5IiJGl1CKfp63J7FUXtGhNSTnG4EVU7mrzWqWfWgkp16PshYg6UxFc291lLFhQhV16qa5odkSztZGkqeU4aygHiOhLSqFqeDv+LwXUigTknTFE8LVusthfu7ddh21OKsr46BXJhCsJoPNqZuJ2HdNLY9iNDIqek53aKbpBK9EgYRy5mKvWSGIWOOAtyl3SXRbwhrgmpRsSb+Ux8DMpnpdyeTfAAAAABJRU5ErkJggg==" class="me-3" alt="使用 Google 登入">
+              <span class="fs-md-5 socail-login">使用 Google 登入</span>
+            </a>
+            <a href="article.html" class="btn btn-custom btn-custom-light w-100" target="_blank">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBvVO9SsRAEJ7d5OQKD9MdJ4gRfABLKznxAbTTVvEKnyLJA1hfcYpoZ2djf/oE2sqBsTEICgFF1Euyzk6SY/N3P819ELIz+fbb2ZkvAPNC/cIz5TOJx8qSes9rCxAWgNjA0EjSPrJvahp3fg5b7kQh3vMsBpENYyCA21Gn5VQKVYkYCxxWG5zWjx9BqdhIqN71zKEePedFds06nG8ZJCaxfv0G7meYbI62g85KX671dMOwFll4TAGnm0skcvX0De5XCP6vUK6oYR8hK4TZPSi5krmo0fro3i+eEg+DENfbpfEaRaHSoWYoqTX0KsZgvwlmQxvFwfEyvfWz11J+XNEJ+SJT+wv2I22qhFzfeX/5/X7qKaUi9oB3bqfRzu079Wdw0KRYTqsANGi2IsqFDsyIEF1eEJJ+QF9MLUZc5Vfh6kcUs6cRkxzJVXM8T5KEMOBr2K9Lzpk6AJ8x1k/cbMOsEEKY8oF54R/eZYMUmIQwhAAAAABJRU5ErkJggg==" class="me-3" alt="使用 Facebook 登入">
+              <span class="fs-md-5 socail-login">使用 Facebook 登入</span>
+            </a>
+            <div class="d-flex gap-3 justify-content-center">
+              <p class="is-member">還沒加入會員？</p>
+              <a href="register.html" class="link-passage" target="_blank">點此註冊</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+        <div class="copyright text-center py-5 py-lg-6 text-primary-400">©Vivre 2024 All right Reserved</div>
+    </div>
+</footer>
+    
+  </body>
+</html>

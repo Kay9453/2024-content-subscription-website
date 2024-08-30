@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>結帳頁</title>
+    <script type="module" crossorigin src="/2024-content-subscription-website/assets/main-361980dc.js"></script>
+    <link rel="stylesheet" href="/2024-content-subscription-website/assets/main-90d38142.css">
+  </head>
+  <body>
+    <header class="container">
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container-fluid py-lg-8 border-bottom-lg px-lg-0">
+            <h1 class="logo d-flex align-items-center me-lg-8 my-5 my-lg-0">
+                <a href="index.html" target="_blank">LOGO</a>
+            </h1>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <!-- <i class="bi bi-x close"></i> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex me-auto position-relative my-6 my-lg-0">
+                    <input class="form-control me-2 rounded-pill search-bar pe-10" placeholder="搜尋文章" aria-label="Search">
+                    <button type="submit" class="btn text-secondary-200 position-absolute end-0  top-50 translate-middle me-5 p-0 border-0">
+                        <i class="bi bi-search fs-4"></i>
+                    </button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-6 gap-lg-5 mb-9 me-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link p-3 px-lg-5 py-lg-1 text-nowrap" href="article.html" target="_blank">所有文章</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3 px-lg-5 py-lg-1 text-nowrap" href="subscribe.html" target="_blank">訂閱方案</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3 px-lg-5 py-lg-1 text-nowrap" href="about.html" target="_blank">關於我們</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="login.html" class="btn btn-custom btn-custom-primary text-nowrap w-100" target="_blank">登入 / 註冊</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>    <div class="container checkout-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb checkout-breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" target="_blank">首頁</a></li>
+          <li class="breadcrumb-item"><a href="subscribe.html" target="_blank">訂閱方案</a></li>
+          <li class="breadcrumb-item active" aria-current="page">付款</li>
+        </ol>
+      </nav>
+      <h2 class="fs-3 fs-lg-1 mb-9 mb-lg-10">付款</h2>
+      <div class="row">
+        <div class="col-lg-7"> 
+          <form action="checkout.html" class="form-custom form-custom-checkout mb-6 mb-lg-0">
+            <h3 class="fs-lg-4 fs-5 text-black">購買人</h3>
+            <div>
+              <div class="mb-4">
+                <label for="name" class="form-label mb-3 fw-bold">姓名</label>
+                <input type="text" class="form-control content-input" id="name" placeholder="請輸入姓名">
+              </div>
+              <div class="mb-4"> 
+                <label for="password" class="form-label mb-3 fw-bold">密碼</label>
+                <input type="password" class="form-control content-input" id="password" placeholder="請輸入密碼">
+              </div>
+              <div class="mb-6 "> 
+                <label for="email" class="form-label">電子信箱</label>
+                <input type="email" class="form-control content-input" id="email" placeholder="請輸入電子信箱">
+              </div>
+              <div class="d-flex align-items-center">
+                <input class="form-check-input" type="checkbox" value="true" id="remember-my-info">
+                <label class="form-check-label" for="remember-my-info">記住我的資訊</label>
+              </div>
+            </div>
+          </form>
+          <form action="checkout.html" class="form-custom form-custom-checkout mb-6 mb-lg-0">
+            <h3 class="fs-lg-4 fs-5 text-black">付款方式</h3>
+            <div class="">
+              <p class="payment-title">Pay With</p>
+              <div class="d-flex align-items-center">
+                <input class="form-check-input" type="radio" value="true" id="pay-with-card" checked>
+                <label class="form-check-label" for="pay-with-card">信用卡</label>
+              </div>
+            </div>
+            <div>
+              <div class="mb-4">
+                <label for="card-number" class="form-label mb-3 fw-bold">信用卡號碼</label>
+                <input type="text" class="form-control content-input" id="card-number" maxlength="16" placeholder="1234 5678 1234 5678">
+              </div>
+              <div class="d-flex gap-6 mb-4">
+                <div class="w-50"> 
+                  <label for="valid-date" class="form-label mb-3 fw-bold">過期日</label>
+                  <input type="text" class="form-control content-input" id="valid-date" placeholder="MM/YY">
+                </div>
+                <div class="w-50"> 
+                  <label for="verification-code" class="form-label mb-3 fw-bold">驗證碼</label>
+                  <input type="text" class="form-control content-input" id="verification-code" maxlength="3" placeholder="CSV">
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <input class="form-check-input" type="checkbox" value="true" id="remember-card-info">
+                <label class="form-check-label" for="remember-card-info">記住卡片資訊</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5">
+          <form action="checkout.html" class="form-custom form-custom-checkout border-secondary-200">
+            <h3 class="fs-lg-4 fs-5 text-secondary-200">訂單資訊</h3>
+            <div class="py-6 border-top-custom-light border-bottom-custom-light">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="product-info">輕量型方案</h4>
+                <span class="product-info">NT 1,188</span>
+              </div>
+              <p class="payment-cycle">年繳</p>
+            </div>
+            <div class="">
+              <label for="coupon" class="form-label mb-3 fw-bold">折扣碼</label>
+              <div class="d-flex gap-3">
+                <input type="text" class="form-control content-input" id="coupon" placeholder="請輸入折扣碼">
+                <button class="btn btn-custom btn-custom-light py-3 px-4 px-md-5 text-nowrap" type="submit">套用</button>
+              </div>
+            </div>
+            <div class="py-6 border-top-custom-light border-bottom-custom-light"> 
+              <div class="checkout-item d-flex justify-content-between align-items-center mb-4">
+                <p>小計</p>
+                <span class="fs-6 fs-lg-5">NT 1,188</span>
+              </div>
+              <div class="checkout-item d-flex justify-content-between align-items-center">
+                <p>折扣</p>
+                <span class="fs-6 fs-lg-5">0</span>
+              </div>
+            </div>
+            <div class="checkout-item d-flex justify-content-between align-items-start"> 
+              <p>總計</p>
+              <span class="total-price">NT 1,188</span>
+            </div>
+            <a href="checkout-success.html" class="btn btn-custom btn-custom-primary">
+              <span class="fs-md-5">立即付款</span>
+              <i class="bi bi-arrow-right fs-5 fs-md-4 ms-3"></i>  
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+        <div class="copyright text-center py-5 py-lg-6 text-primary-400">©Vivre 2024 All right Reserved</div>
+    </div>
+</footer>
+    
+  </body>
+</html>
