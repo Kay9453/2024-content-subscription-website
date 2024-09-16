@@ -1,10 +1,4 @@
 .copyright{
     border-top: 1px solid $gray-300;
-    font-size: 14px;
     letter-spacing: 0.05em;
-}
-@include media-breakpoint-up(lg) {
-    .copyright{
-        font-size: 16px;
-    }
 }

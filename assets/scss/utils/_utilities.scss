@@ -137,13 +137,23 @@ $utilities: map-merge(
 
 
 // 共用：Tag 樣式
+// .tag{
+//   padding: 4px 8px;
+//   border-radius: 4px;
+//   background-color: $primary-300;
+//   color: $primary-400;
+//   font-weight: bold;
+//   cursor: pointer;
+//   &:hover{
+//     color: #fff;
+//     background-color: $primary-400;
+//   }
+// }
+
 .tag{
-  padding: 4px 8px;
-  border-radius: 4px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
   background-color: $primary-300;
-  color: $primary-400;
-  font-weight: bold;
-  cursor: pointer;
   &:hover{
     color: #fff;
     background-color: $primary-400;
@@ -170,4 +180,9 @@ $utilities: map-merge(
   .breadcrumb-item{
       font-size: 16px;
   }
+}
+
+// 陰影效果
+.shadow-effect{
+  box-shadow: 0px 2px 8px 0px rgba(110, 107, 103, 0.08);
 }

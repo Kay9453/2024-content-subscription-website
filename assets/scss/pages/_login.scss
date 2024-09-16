@@ -1,17 +1,5 @@
 // 註冊 & 登入共用 scss
 
-.login-content{
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-@include media-breakpoint-up(lg) {
-    .login-content{
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-}
-
-
 .login-deco{
     display: inline-block;
     width: 100%;

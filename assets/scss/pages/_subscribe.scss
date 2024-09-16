@@ -1,14 +1,3 @@
-.subscribe-content{
-    margin-top: 16px;
-    margin-bottom: 60px;
-}
-@include media-breakpoint-up(lg) {
-    .subscribe-content{
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-}
-
 .subscribe-breadcrumb{
     margin-bottom: 8px;
 }
@@ -68,47 +57,23 @@
 
 
 .plan-price{
-    font-size: 32px;
     color: #52525B;
-    font-weight: bold;
 }
 .plan-price-unit{
-    font-size: 20px;
     color: #A1A1AA;
-    font-weight: bolder;
 }
 .plan-price-origin{
-    font-size: 20px;
-    color: $gray-500; 
     line-height: 1.09;
-}
-@include media-breakpoint-up(lg) {
-    .plan-price{
-        font-size: 40px;
-    }
-    .plan-price-unit{
-        font-size: 24px;
-    }
-    .plan-price-origin{
-        font-size: 22px; 
-    }
 }
 
 .plan-content{
-    display: flex;
-    flex-direction: column;
     gap: 28px;
     li{
-        font-size: 16px;
-        font-weight: bold;
         letter-spacing: 0.1em;
     }
 }
 @include media-breakpoint-up(lg) {
     .plan-content{
         gap: 24px;
-        li{
-            font-size: 20px;
-        }
     }
 }

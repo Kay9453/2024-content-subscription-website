@@ -35,28 +35,17 @@
 // 區塊：大事紀
 .event-year{
     font-family: "Newsreader";
-    color: $gray-100;
-    background-color: $primary-400;
     padding: 12px;
-    font-weight: bold;
     width: fit-content;
 }
-@include media-breakpoint-up(md) {
-    .event-year{
-        font-size: 24px;
-    }
-}
+
 .event-month{
     font-family: "Newsreader";
-    font-size: 16px;
-    color: $gray-600;
-    font-weight: bold;
     text-wrap: nowrap;
     width: 50px;
 }
 @include media-breakpoint-up(md) {
     .event-month{
-        font-size: 24px;
         width: 64px;
     }
 }
